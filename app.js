@@ -16,7 +16,6 @@ app.get('/', (req, res) => {
 
 //checks the rivets in index
 app.get('/rivets', (req, res) => {
-
     Rivet.findAll().then((rivets) => {
         res.json({
             rivets: rivets

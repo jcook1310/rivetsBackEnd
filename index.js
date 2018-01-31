@@ -1,5 +1,7 @@
 const app = require('./app')
 
-app.listen(3000, function () {
-    console.log('Todo Server listening on port 3000!');
+const port = 3001
+
+app.listen(port, function () {
+    console.log('Rivet Server listening on port ' + port + '!');
 });

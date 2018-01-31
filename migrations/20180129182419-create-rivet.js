@@ -24,6 +24,15 @@ module.exports = {
       updatedAt: {
         allowNull: false,
         type: Sequelize.DATE
+    },
+      rivetListId:{                   // <- This is the new attribute
+        type: Sequelize.INTEGER,
+        onDelete: 'CASCADE',
+        references: {
+          model: 'RivetLists',
+          key: 'id',
+          as: 'rivetListId'
+        }
       }
     });
   },
